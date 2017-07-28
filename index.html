@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>各国年轻人 买房一样难</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/velocity.ui.js"></script>
+</head>
+<style>
+
+    *, *:after, *:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #fafafa;
+        font-family: 'Microsoft Yahei', '微软雅黑', Kefa, Cambria, monospace;
+        color: #333;
+        line-height: 1.6;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        /*height: 100rem;*/
+        overflow: hidden;
+    }
+    img {
+        width: 100%;
+    }
+    
+    #container {
+        width: 10rem;
+        min-height: 100%;
+        position: relative;
+    }
+    /*网页打开时居中*/
+    @media (min-width:540px) {
+        html {
+            background: #dddddd;
+        }
+        #container {
+            width: 540px;
+            overflow:hidden;
+            margin: 0 auto;
+            background: #fafafa;
+        }
+    }
+</style>
+<body>
+
+
+<div id="container">
+    <div id="header">
+        <div id="title"><img src="images/title.png"></div>
+    </div>
+    <div id="szslogo">
+        <img src="images/logo.png">
+    </div>
+
+
+    <div class="section sectionFirst" id="partOne">
+        <div class="context">
+            <div class="para" id="ani1">
+                <p>英国的汇丰银行做了一个调查<br/>关于年轻人买房的<br/>不只在中国，还有其他八个国家<br/>这里的年轻人指的是80／90后<br/>他们还有个响亮的名字，叫：
+                </p>
+            </div>
+            <div class="qxyd" id="ani2">
+                <img src="images/qxyd.png">
+            </div>
+
+            <div class="para" id="ani3">
+                <p><br>调查结果显示:</p>
+            </div>
+
+            <div class="bar bar1" id="ani4" style="margin-bottom: 10px;">
+                <p>76%无房者希望未来五年有自己的房子</p>
+                <div class="colorBar colorBar1"></div>
+            </div>
+            <div class="bar" id="ani5">
+                <p>九国平均的话，有40%的千禧一代</p>
+                <div class="colorBar" ></div>
+            </div>
+            <div class="para" id="ani6">
+                <p>自己名下有房<br/>然而不同国家的差异可就大了</p>
+            </div>
+
+            <div class="testPaper" id="testPaper1">
+                <h2>你猜你猜!</h2>
+                <div class="question">
+                    <p>1. 你猜猜中国的80/90后自己有房的比例是？</p>
+                    <div class="sliderBar" id="sliderBar1">
+                        <div class="slider-range-min">
+                            <div class="slider-bg"></div>
+                        </div>
+                        <div class="info-value">
+                            <span class="slider-value">50</span>
+                            <span class="answer-value">70%</span>
+                        </div>
+                    </div>
+                    <p>2. 80/90后自己有房比例最高的是？</p>
+                    <div class="answerOption" id="answerOption1">
+                        <div class="checkBox">法国</div>
+                        <div class="checkBox">美国</div>
+                        <div style="clear: both;"></div>
+                        <div class="checkBox" style="font-size: 70%;">马来西亚</div>
+                        <div class="checkBox rightAnswer">中国</div>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <p>3. 你猜猜美国年轻人有房的比例是？</p>
+                    <div class="sliderBar" id="sliderBar2">
+                        <div class="slider-range-min">
+                            <div class="slider-bg"></div>
+                        </div>
+                        <div class="info-value">
+                            <span class="slider-value">50</span>
+                            <span class="answer-value">35%</span>
+                        </div>
+                    </div>
+                    <p>4. 九个国家的80/90后无房户，谁最迫切在未来五年买上房？</p>
+                    <div class="answerOption" id="answerOption2">
+                        <div class="checkBox">法国</div>
+                        <div class="checkBox">美国</div>
+                        <div style="clear: both;"></div>
+                        <div class="checkBox rightAnswer" style="font-size: 70%;">马来西亚</div>
+                        <div class="checkBox">中国</div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div class="para titlePara" id="houseBarTitle">
+                <p>各国年轻人拥有住房比例</p>
+            </div>
+
+
+            <div class="houseBar table">
+                <img src="images/houseBar.png">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section2" id="partTwo">
+        <div class="context">
+            <div class="para" id="ani21">
+                <p>买房压力大，在哪都一样<br/>九国年轻人中有69%承认</p>
+            </div>
+
+            <div class="bar bar1" id="ani22">
+                <p>还没有在经济上准备好</p>
+                <div class="colorBar colorBar1"></div>
+            </div>
+
+            <div class="para titlePara" id="ani23">
+                <p>买不起房面临的主要问题？</p>
+            </div>
+
+            <div class="table table1" id="ani24">
+                <img src="images/mainTable1.png">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section" id="partThree">
+        <div class="context" id="ani31">
+            <div class="para">
+                买房不能空想<br/>总得有个计划吧<br/>然而无房的千禧一代中<br/>打算未来两年买房<br/>但没计划的竟然有31%
+                <br/>大致有个计划的占一半<br/>有精确预算计划的仅有16%
+            </div>
+            <div class="para" id="ani32">
+                那些仍和父母住一起的年轻人<br/>
+                就更没计划了
+            </div>
+            <div class="para titlePara" id="ani33">
+                <p>未来两年打算买房做预算了？</p>
+            </div>
+
+            <div class="table table2" id="ani34">
+                <img src="images/mainTable2.png">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section2" id="partFour">
+        <div class="context">
+            <div class="para"  id="ani41">
+                计划归计划<br/>
+                到真买的时候还会有差距（尤其是在中国）<br/>
+                56%的在调查前两年内买房的年轻人表示
+            </div>
+            <div class="bar bar1" id="ani42">
+                <p>当然会超预算啊</p>
+                <div class="colorBar colorBar1"></div>
+            </div>
+            <div class="para" id="ani43" style="margin-top: .6rem;">
+                <p><br/>这一比例在阿联酋达到70%</p>
+            </div>
+            <div class="table table3" id="ani44">
+                <img src="images/mainTable3.png">
+            </div>
+            <div class="para titlePara" id="ani45">
+                <p>买房超预算，又该怎么办？</p>
+            </div>
+
+            <div class="table table4" id="ani46">
+                <img src="images/mainTable4.png">
+            </div>
+
+            <div class="para" id="ani47" style="margin-top: 1rem; margin-bottom: 1rem;">
+                <br/>实在买不起房<br/>
+                但又很想拥有自己的房子<br/>
+                那么做些妥协好吗<br/>
+                首先你可能需要放弃咖啡和牛油果<br/>
+                <br/>
+            </div>
+
+            <div class="bar bar1" id="ani48">
+                <p>55%无房年轻人选择降低生活质量来存钱</p>
+                <div class="colorBar colorBar1"></div>
+            </div>
+
+            <div class="para" id="ani49">
+                <p><img src="images/planB.png" style="width: 2rem;margin-right: .2rem;">或者先买个小点的房</p>
+                <p><img src="images/planC.png" style="width: 2rem;margin-right: .2rem;">或者晚几年再要孩子</p>
+                <p><img src="images/plan.png" style="width: 1.2rem;"></p>
+            </div>
+
+            <div class="para titlePara" id="ani444">
+                <p>如果必须放弃什么来存钱...</p>
+            </div>
+
+            <div class="table table5" id="ani445">
+                <img src="images/mainTable5.png">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="section sectionLast" id="partFive">
+        <div class="context">
+            <div class="para">
+                <img src="images/light.png" style="float: left;width: 2rem;" id="ani51">
+                <div style="float: left; width:6.4rem;" id="ani52">
+                    <div class="para">
+                        这些都做了，难度还是很大
+                    </div>
+                    <div class="bar bar1">
+                        <p>诶，不是还可以“啃老”嘛</p>
+                        <div class="colorBar colorBar1"></div>
+                    </div>
+                    <div class="para">
+                        那样事情会不会不一样了<br/>
+                        九国的有房子的80/90后中<br/>
+                        平均有36%是来自父母的资助
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+
+            <div class="testPaper" id="testPaper2">
+                <h2>你猜你猜!</h2>
+                <div class="question">
+                    <p>1. 你猜中国80/90后买房借助父母资助的比例大约有？</p>
+                    <div class="sliderBar" id="sliderBar3">
+                        <div class="slider-range-min">
+                            <div class="slider-bg"></div>
+                        </div>
+                        <div class="info-value">
+                            <span class="slider-value">50</span>
+                            <span class="answer-value">40%</span>
+                        </div>
+                    </div>
+                    <p>2. 80/90后为了省钱搬回父母家住的比例最高的国家，你猜是？</p>
+                    <div class="answerOption" id="answerOption3">
+                        <div class="checkBox">中国</div>
+                        <div class="checkBox rightAnswer">美国</div>
+                        <div style="clear: both;"></div>
+                        <div class="checkBox" style="font-size: 70%;">马来西亚</div>
+                        <div class="checkBox">法国</div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+
+            <div class="table table6" id="ani53" style="padding-top: 1rem">
+                <img src="images/houseBar2.png">
+            </div>
+
+            <div class="para">
+                <img src="images/sign.png"  id="ani54" style="float: left;width: 2rem; margin-right: .2rem;">
+                <div style="float: left; width:6.2rem;"  id="ani55">
+                    <div class="para">
+                        居然是美国<br/>
+                        所以美剧里<br/>
+                        18岁以后就仗剑走天涯<br/>
+                        的那些桥段是怎么回事<br/>
+                        我们一定是看了假美剧<br/>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+        <div class="context">
+            <div class="note">
+                <p style="font-size: 80%;">注：千禧一代指出生在1981年至1998年之间的人群</p>
+                <p style="font-size: 80%;">数据来源：汇丰银行Beyond the Bricks调查</p>
+            </div>
+
+            <div id="people" style="font-size: 80%; margin-top: 30px;">
+                <p>记者：陈香君</p>
+                <p>设计开发：郑蔚琦（实习）</p>
+                <p>监制：黄晨</p>
+                <p>财新数据可视化实验室出品</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

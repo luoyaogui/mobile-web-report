@@ -5,7 +5,7 @@
     #header {
         width: 10rem;
         height: 5.6rem;
-        background: url("images/topBG.png") no-repeat center center;
+        background: url("../images/topBG.png") no-repeat center center;
         background-size: 100% auto;
     }
     #title {
@@ -16,7 +16,7 @@
     #footer {
         width: 10rem;
         height: 8rem;
-        background: url("images/bottomBG.png") no-repeat center center;
+        background: url("../images/bottomBG.png") no-repeat center center;
         background-size: 100% 100%;
     }
     .note {
@@ -42,7 +42,7 @@
         content: " ";
         width: 100%;
         height: 1.4rem;
-        background: url("images/bottomLight.png") no-repeat;
+        background: url("../images/bottomLight.png") no-repeat;
         background-size: 100% 100%;
         position: absolute;
         bottom: -1.4rem;
@@ -58,7 +58,7 @@
         content: " ";
         width: 100%;
         height: 1.4rem;
-        background: url("images/bottomDark.png") no-repeat;
+        background: url("../images/bottomDark.png") no-repeat;
         background-size: 100% 100%;
         position: absolute;
         bottom: -1.4rem;
@@ -91,7 +91,7 @@
     }
     .titlePara p {
         font-weight: bold;
-        background: url("images/titleBG.png") center center repeat-x;
+        background: url("../images/titleBG.png") center center repeat-x;
         background-size: 100% 100%;
         display: inline-block;
         padding: 0 .4rem;
@@ -129,14 +129,14 @@
 
     .spBar {
         border-top-left-radius: 0;
-        background-image: url("images/barFill.png");
+        background-image: url("../images/barFill.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
     #spColorBar {
         width: 0%;
         border-radius: 0;
-        background-image: url("images/barFill.png");
+        background-image: url("../images/barFill.png");
         background-repeat: no-repeat;
         background-size: auto 100%;
     }
@@ -160,7 +160,7 @@
         content: " ";
         width: .7rem;
         height: .5rem;
-        background: url("images/clip.png") no-repeat;
+        background: url("../images/clip.png") no-repeat;
         background-size: 100% 100%;
         position: absolute;
         top: -.35rem;
@@ -170,7 +170,7 @@
         content: " ";
         width: .7rem;
         height: .5rem;
-        background: url("images/clip.png") no-repeat;
+        background: url("../images/clip.png") no-repeat;
         background-size: 100% 100%;
         position: absolute;
         top: -.35rem;
@@ -191,7 +191,7 @@
     .question .answerOption .checkBox {
         width: 2.5rem;
         height: .9rem;
-        background: url("images/check.png") no-repeat;
+        background: url("../images/check.png") no-repeat;
         background-size: 100% 100%;
         float: left;
         margin: .2rem 0;
@@ -205,7 +205,7 @@
         margin-right: .5rem;
     }
     /*.question .answerOption .checkBox:hover {*/
-        /*background: url("images/checkRight.png") no-repeat;*/
+        /*background: url("../images/checkRight.png") no-repeat;*/
         /*background-size: 100% 100%;*/
     /*}*/
 
@@ -316,7 +316,7 @@
         position: absolute;
         width: .2rem;
         height: .2rem;
-        background: url("images/tri.png") no-repeat;
+        background: url("../images/tri.png") no-repeat;
         background-size: 100% 100%;
         left: 50%;
         margin-left: -.1rem;
